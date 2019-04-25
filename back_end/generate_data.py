@@ -35,6 +35,10 @@ with open('../data/input_verified.csv', encoding='utf-8', mode='r') as input, op
             row_typed.append(float(row[consts.LATITUDE]))
         except:
             row_typed.append(0)
+        # print(row)
+        # print(consts.LONGITUDE_GEOCODE)
+        # print(row[consts.LONGITUDE_GEOCODE])
+        # print(row[0])
         row_typed.append(int(row[consts.DEATH]))
         row_typed.append(int(row[consts.DEATH_CHILDREN]))
         row_typed.append(int(row[consts.INJURY]))
