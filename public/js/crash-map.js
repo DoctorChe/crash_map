@@ -20,7 +20,6 @@ const VALID = 17;
 const VALID_STRICT = 18;
 
 const YOSHKAR_OLA = 'Йошкар-Ола';
-// const DATA_YEAR = 2015;
 const DATA_YEAR = 2018;
 
 let map, heatmap, markerCluster;

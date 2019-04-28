@@ -34,8 +34,6 @@ def make_request(input, url):
         except KeyError:
             return make_request(input, url)
 
-        # print(json_response)
-
         for object in json_response:
             if object['GeoObject']['metaDataProperty']['GeocoderMetaData']['kind'] == consts.HOUSE_YANDEX:
                 location = object['GeoObject']['Point']['pos'].split()

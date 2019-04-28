@@ -66,11 +66,9 @@ def check_confused_coordinates(row):
         pass
 
 
-# identify full list of dates for 2015 for accidents dates validation
 # identify full list of dates for 2018 for accidents dates validation
 dates_set = set()
 actual_dates_set = set()
-# start_date = date.min.replace(2015)
 start_date = date.min.replace(2018)
 for x in range(0, 365):
     date = start_date + datetime.timedelta(days=x)
